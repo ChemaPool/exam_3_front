@@ -4,7 +4,7 @@ import Text from './Text';
 import Figure from './Figure';
 import Eyes from '../images/eye.jpg';
 import Lips from '../images/lips.jpg';
-import NoiseBackground from '../images/noise.png';
+import NoiseBackgroundImg from '../images/noise.png';
 import BackgroundImage from '../images/background.png';
 
 const Container = Styled.div`
@@ -28,10 +28,11 @@ const ContainerImage = Styled.img`
 
 const ContainerNoise = Styled.div`
   z-index: 3;
+  opacity: .6;
   width: 600px;
   height: 900px;
   position: absolute;
-  background-image: url(${NoiseBackground});
+  background-image: url(${NoiseBackgroundImg});
 `;
 
 const BodyPage = Styled.div`
@@ -65,7 +66,7 @@ const MainContainer = () => {
         zIndex="2"
         top="780px"
         left="640px"
-        fontSize="52px"
+        fontSize="46px"
         text="Charlotte Hobson" />
       <Figure
         width="30px"
@@ -124,7 +125,7 @@ const MainContainer = () => {
         left="100px"
         width="400px"
         height="550px"
-        marginTop="-830px"
+        marginTop="-832px"
         boxShadow="-10px 10px 10px -3px rgba(0,0,0,0.75)"
         color="linear-gradient(to right,
           rgba(239,224,183,1) 0%, rgba(239,224,183,1) 50%,
@@ -164,7 +165,7 @@ const MainContainer = () => {
         width="300px"
         height="280px"
         borderRadius="0"
-        marginTop="-250px"
+        marginTop="-280px"
         color="repeating-linear-gradient(0deg, #d04a0d, #d04a0d 5px, #f2c707 5px, #f2c707 10px)" />
       <Figure
         zIndex="1"
